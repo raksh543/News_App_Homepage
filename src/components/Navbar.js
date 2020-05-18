@@ -10,29 +10,29 @@ export default function Navbar() {
           <ReactBootstrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
           <ReactBootstrap.Navbar.Collapse id="basic-navbar-nav">
             <ReactBootstrap.Nav className="mr-auto">
-              <ReactBootstrap.Nav.Link href="//">Home</ReactBootstrap.Nav.Link>
+              <ReactBootstrap.Nav.Link href="/">Home</ReactBootstrap.Nav.Link>
 
-              <ReactBootstrap.Nav.Link href="//">
+              <ReactBootstrap.Nav.Link href="/politics">
                 Politics
               </ReactBootstrap.Nav.Link>
 
-              <ReactBootstrap.Nav.Link href="//">World</ReactBootstrap.Nav.Link>
+              <ReactBootstrap.Nav.Link href="/world">World</ReactBootstrap.Nav.Link>
 
-              <ReactBootstrap.Nav.Link href="//">
+              <ReactBootstrap.Nav.Link href="/europe">
                 Europe
               </ReactBootstrap.Nav.Link>
 
-              <ReactBootstrap.Nav.Link href="//">
+              <ReactBootstrap.Nav.Link href="/economy">
                 Economy
               </ReactBootstrap.Nav.Link>
 
-              <ReactBootstrap.Nav.Link href="//">Money</ReactBootstrap.Nav.Link>
+              <ReactBootstrap.Nav.Link href="/money">Money</ReactBootstrap.Nav.Link>
 
-              <ReactBootstrap.Nav.Link href="//">
+              <ReactBootstrap.Nav.Link href="/business">
                 Business
               </ReactBootstrap.Nav.Link>
 
-              <ReactBootstrap.Nav.Link href="//">
+              <ReactBootstrap.Nav.Link href="/archive">
                 Archive
               </ReactBootstrap.Nav.Link>
               <ReactBootstrap.NavDropdown
@@ -63,19 +63,19 @@ export default function Navbar() {
             <ReactBootstrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
             <ReactBootstrap.Navbar.Collapse id="basic-navbar-nav">
               <ReactBootstrap.Nav className="mr-auto">
-                <ReactBootstrap.Nav.Link href="//">
+                <ReactBootstrap.Nav.Link href="/demo">
                   Demo
                 </ReactBootstrap.Nav.Link>
-                <ReactBootstrap.Nav.Link href="//">
+                <ReactBootstrap.Nav.Link href="/moredemo">
                   More Demos
                 </ReactBootstrap.Nav.Link>
-                <ReactBootstrap.Nav.Link href="//">
+                <ReactBootstrap.Nav.Link href="/government">
                   Government
                 </ReactBootstrap.Nav.Link>
-                <ReactBootstrap.Nav.Link href="//">
+                <ReactBootstrap.Nav.Link href="/financial">
                   Financial
                 </ReactBootstrap.Nav.Link>
-                <ReactBootstrap.Nav.Link href="//">
+                <ReactBootstrap.Nav.Link href="/sports">
                   Sports
                 </ReactBootstrap.Nav.Link>
               </ReactBootstrap.Nav>
