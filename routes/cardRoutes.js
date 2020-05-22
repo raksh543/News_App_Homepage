@@ -23,7 +23,7 @@ router.get(`/api/product`, async (req, res) => {
     //         console.log("save")
     //     }
     // })
-    let cards = await Card.find();
+    let cards = await Card.find({"category":req.query.category});
     return res.status(200).send(cards);
 });
 
