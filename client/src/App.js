@@ -20,6 +20,7 @@ import MoreDemo from "./components/MoreDemo"
 import Sports from "./components/Sports"
 import Financial from "./components/Financial"
 import Government from "./components/Government"
+import Admin from "./Admin/Admin"
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -74,6 +75,8 @@ class App extends Component {
             <Route path="/government" component={Government}/>
             <Route path="/financial" component={Financial}/>
             <Route path="/sports" component={Sports}/>
+            <Route path="/Admin" component={Admin}/>
+            
             </Switch>
             <Footer />
         </div>
@@ -139,4 +142,3 @@ export default App;
 // }
 
 // export default App;
-

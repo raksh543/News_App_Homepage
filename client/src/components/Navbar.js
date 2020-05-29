@@ -79,6 +79,9 @@ export default function Navbar() {
                   Sports
                 </ReactBootstrap.Nav.Link>
               </ReactBootstrap.Nav>
+              <ReactBootstrap.Nav>
+                <ReactBootstrap.Nav.Link href="/admin">Admin</ReactBootstrap.Nav.Link>
+              </ReactBootstrap.Nav>
             </ReactBootstrap.Navbar.Collapse>
           </ReactBootstrap.Navbar>
         </div>

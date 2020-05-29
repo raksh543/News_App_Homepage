@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('./models/horizontalCard');
 var cardRoute = require('./routes/cardRoutes');
+
+const adminRouter = require('./routes/admin-router')
 // var http = require('http');
 
 const app = express();
@@ -11,6 +13,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect("mongodb+srv://monchu:monchu@cluster0-dgfgi.mongodb.net/NewsReact?retryWrites=true&w=majority", { useNewUrlParser: true });
 // mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost:27017/news-react-app`);
 
+app.use('/admin', adminRouter)
 app.use(bodyParser.json());
 app.use(cardRoute);
 // app.use(function(req, res, next) {
