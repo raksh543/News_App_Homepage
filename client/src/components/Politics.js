@@ -1,15 +1,8 @@
 import React, { Component, useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
-import HorizontalCard from "./HorizontalCard";
 import SmallCard from "./SmallCard";
 import cardservice from '../services/cardservice';
 
-// import React, { useState, useEffect } from "react";
-
-// // SERVICES
-// import cardservice from './services/cardservice';
-cardservice.getAll();
-console.log("here in")
 
 function App() {
   const [cards, setcards] = useState(null);
@@ -22,7 +15,7 @@ function App() {
 
   const getCards = async () => {
     console.log("getting")
-    let res = await cardservice.getAll();
+    let res = await cardservice.getAll("politics");
     console.log(res);
     setcards(res);
   }
@@ -73,42 +66,15 @@ function App() {
                   specimen book.
                 </p>
               </div>
-              {/* <ul className="list">
-                {(cards && cards.length > 0) ? (
-                  cards.map(card => renderCard(card))
-                ) : (
-                    <p>No cards found</p>
-                  )}
-              </ul> */}
               <Row>
                 <Col>
                 {(cards && cards.length > 0) ? (
                   cards.map(card => renderCard(card))
                 ) : (
-                    <p>No cards found</p>
+                    <p>No news updates found</p>
                   )}
                 </Col>
               </Row>
-              {/* <Row>
-                <Col>
-                  <HorizontalCard />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <HorizontalCard />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <HorizontalCard />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <HorizontalCard />
-                </Col>
-              </Row> */}
             </Col>
             <Col xs="4" className="posts-right-section">
               <Row className="popular-posts">
